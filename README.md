@@ -36,8 +36,6 @@ python -m spacy download en_core_web_sm
 
 4. (Optional) Install Tesseract OCR for image text extraction:
 - Ubuntu/Debian: `sudo apt-get install tesseract-ocr`
-- macOS: `brew install tesseract`
-- Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
 
 ## Usage
 
@@ -129,11 +127,6 @@ This fine-tunes the NER model on your processed resumes.
 - Simplified OCR processing
 - Efficient TF-IDF vectorization
 
-## Requirements
-
-- Python 3.8+
-- 4GB RAM minimum (8GB recommended for model training)
-- GPU optional (speeds up OCR and model training)
 
 ## Architecture
 
@@ -168,11 +161,3 @@ ResumeParser
 **OCR not working**: Install EasyOCR or Tesseract. The system will work without OCR but won't extract text from images.
 
 **Memory errors during training**: Reduce batch size in `TrainingArguments` or process fewer resumes at once.
-
-## License
-
-MIT License
-
-## Support
-
-For issues or questions, please review the code documentation or create an issue in the project repository.
